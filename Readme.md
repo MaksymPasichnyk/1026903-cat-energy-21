@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Maxym Pasichnyk](https://up.htmlacademy.ru/adaptive/21/user/1026903).
-* Наставник: `Неизвестно`.
+* Наставник: [Даниил Гаврилов](https://htmlacademy.ru/profile/id193541). 
 
 ---
 
