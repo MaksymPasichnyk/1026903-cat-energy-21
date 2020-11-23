@@ -1,0 +1,26 @@
+.catalog__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.catalog__description {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.catalog__button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black-color;
+}
