@@ -1,0 +1,37 @@
+.catalog {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.catalog__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog__description {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.catalog__item-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.show-all {
+  background-color: $basic-grey;
+  color: $special-dark-grey;
+}
