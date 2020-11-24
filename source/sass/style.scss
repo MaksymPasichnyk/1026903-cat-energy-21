@@ -1,1 +1,11 @@
-// Начните писать стили здесь
+@import "blocks/variables.scss";
+@import "default.scss";
+@import "blocks/header/page.scss";
+@import "blocks/header/page-header.scss";
+@import "blocks/main-page/page-main.scss";
+@import "blocks/main-page/promo.scss";
+@import "blocks/main-page/catalog.scss";
+@import "blocks/main-page/benefits.scss";
+@import "blocks/main-page/example.scss";
+@import "blocks/footer/page-footer.scss";
+@import "blocks/footer/contacts.scss"
