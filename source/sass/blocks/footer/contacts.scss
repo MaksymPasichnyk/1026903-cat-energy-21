@@ -1,16 +1,18 @@
-.contacts__description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
+.contacts {
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
 
-.contacts__address {
-  font-family: $special-dark-grey;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: $special-dark-grey;
+  &__address {
+    font-family: $special-dark-grey;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $special-dark-grey;
+  }
 }

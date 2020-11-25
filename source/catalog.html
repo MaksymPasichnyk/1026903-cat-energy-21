@@ -21,19 +21,19 @@
           </span>
         </button>
         <div class="container">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list list-reset">
             <li class="main-nav__list-item main-nav__list-item--active">
-              <a>
+              <a class="main-nav__link">
                 главная
               </a>
             </li>
             <li class="main-nav__list-item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 каталог продукции
               </a>
             </li>
             <li class="main-nav__list-item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 подбор программы
               </a>
             </li>
@@ -49,13 +49,13 @@
         <h2 class="catalog__title">
           Каталог продукции
         </h2>
-        <ul class="catalog__list">
+        <ul class="catalog__list list-reset">
           <li class="catalog__item">
             <div class="catalog__image">
               <img src="https://via.placeholder.com/150x150">
             </div>
             <div class="catalog__description">
-              <b>
+              <b class="catalog__item-title">
                 Cat Energy
                 PRO
                 500 г
@@ -87,14 +87,16 @@
                 </tr>
               </table>
             </div>
-            <a class="button"></a>
+            <a class="button" href="#">
+              заказать
+            </a>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
               <img src="https://via.placeholder.com/150x150">
             </div>
             <div class="catalog__description">
-              <b>
+              <b class="catalog__item-title">
                 Cat Energy
                 PRO
                 1000 г
@@ -126,14 +128,16 @@
                 </tr>
               </table>
             </div>
-            <a class="button"></a>
+            <a class="button" href="#">
+              заказать
+            </a>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
               <img src="https://via.placeholder.com/150x150">
             </div>
             <div class="catalog__description">
-              <b>
+              <b class="catalog__item-title">
                 Cat Energy
                 PRO
                 500 г
@@ -165,14 +169,16 @@
                 </tr>
               </table>
             </div>
-            <a class="button"></a>
+            <a class="button" href="#">
+              заказать
+            </a>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
               <img src="https://via.placeholder.com/150x150">
             </div>
             <div class="catalog__description">
-              <b>
+              <b class="catalog__item-title">
                 Cat Energy
                 PRO
                 1000 г
@@ -204,14 +210,16 @@
                 </tr>
               </table>
             </div>
-            <a class="button"></a>
+            <a class="button" href="#">
+              заказать
+            </a>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
               <img src="https://via.placeholder.com/150x150">
             </div>
             <div class="catalog__description">
-              <b>
+              <b class="catalog__item-title">
                 Cat Energy
                 SLIM
                 500 г
@@ -243,14 +251,16 @@
                 </tr>
               </table>
             </div>
-            <a class="button"></a>
+            <a class="button" href="#">
+              заказать
+            </a>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
               <img src="https://via.placeholder.com/150x150">
             </div>
             <div class="catalog__description">
-              <b>
+              <b class="catalog__item-title">
                 Cat Energy
                 SLIM
                 1000 г
@@ -282,14 +292,16 @@
                 </tr>
               </table>
             </div>
-            <a class="button"></a>
+            <a class="button" href="#">
+              заказать
+            </a>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
               <img src="https://via.placeholder.com/150x150">
             </div>
             <div class="catalog__description">
-              <b>
+              <b class="catalog__item-title">
                 Cat Energy
                 SLIM
                 500 г
@@ -321,16 +333,18 @@
                 </tr>
               </table>
             </div>
-            <a class="button"></a>
+            <a class="button" href="#">
+              заказать
+            </a>
           </li>
           <li class="catalog__item">
-            <h3>
+            <h3 class="catalog__item-title">
               Показать еще 100500 товаров
             </h3>
-            <p>
+            <p class="catalog__description">
               На самом деле вкусов гораздо больше!
             </p>
-            <a class="button show-all" href="#">
+            <a class="button catalog__button--show-all" href="#">
               показать все
             </a>
           </li>
@@ -343,7 +357,7 @@
         <h3 class="additional-goods__title">
           Дополнительные товары
         </h3>
-        <ul class="additional-goods__list">
+        <ul class="additional-goods__list list-reset">
           <li class="additional-goods__item">
             <table class="additional-goods__table">
               <th>
@@ -418,16 +432,16 @@
           </li>
         </ul>
         </div>
-      </section>
-      <div class="gift">
+      <div class="additional-goods__gift">
         <div class="container">
-          <p class="gift__description">
+          <p class="additional-goods__gift-description">
             Закажите все
             и получите чехол для
             кота в подарок!
           </p>
         </div>
-    </div>
+      </div>
+      </section>
   </main>
 
   <footer class="page-footer">
@@ -455,7 +469,7 @@
         <img src="https://via.placeholder.com/128x24" alt="Кэт Энерджи">
       </div>
       <div class="page-footer__social">
-        <ul class="social-list">
+        <ul class="social-list list-reset">
           <li class="social-list__item social-list__item-vk">
             <a href="#"></a>
           </li>

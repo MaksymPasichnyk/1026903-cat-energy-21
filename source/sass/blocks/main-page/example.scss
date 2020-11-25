@@ -1,21 +1,21 @@
-.example__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 40px;
-}
+.example {
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+  }
 
-.example__description {
-  font-family: $font-secondary;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special-dark-grey;
-}
+  &__description {
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-dark-grey;
+  }
 
-.example__stats {
-  b {
+  &__stats-info {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -23,7 +23,7 @@
     text-transform: uppercase;
   }
 
-  span {
+  &__stats-description {
     font-family: $font-secondary;
     font-style: normal;
     font-weight: normal;
@@ -32,20 +32,20 @@
     text-align: center;
     color: $special-dark-grey;
   }
-}
 
-.example__food-costs {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
+  &__food-costs {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 
-.example__range {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+  &__range {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }
