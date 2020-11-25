@@ -1,16 +1,12 @@
-.additional-goods__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-}
+.additional-goods {
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+  }
 
-.additional-goods__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  th {
+  &__list-header {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -18,7 +14,7 @@
     text-transform: uppercase;
   }
 
-  tr {
+  &__list-row {
     font-family: $font-secondary;
     font-style: normal;
     font-weight: normal;
@@ -26,13 +22,13 @@
     line-height: 14px;
     color: $special-dark-grey;
   }
-}
 
-.gift__description {
-  font-family: $font-secondary;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: $white-color;
+  &__gift-description {
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white-color;
+  }
 }

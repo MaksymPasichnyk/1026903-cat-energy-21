@@ -1,5 +1,35 @@
 .program {
-  label {
+  &__main-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 26px;
+    color: $black-color;
+  }
+
+  &__note {
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  &__name-option {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -7,53 +37,4 @@
     text-transform: uppercase;
     color: $special-dark-grey;
   }
-
-  ul {
-    list-style: none;
-  }
-}
-
-.program__main-title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.program__description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.program__title {
-  font-size: 24px;
-  line-height: 26px;
-  color: $black-color;
-}
-
-.button {
-  display: block;
-  text-align: center;
-  padding: 7px 44px;
-  background-color: #68b738;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 100%;
-  border: none;
-  outline: none;
-}
-
-.program__note {
-  font-family: $font-secondary;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
 }

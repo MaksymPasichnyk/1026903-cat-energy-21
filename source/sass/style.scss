@@ -11,3 +11,18 @@
 @import "blocks/form-page/program.scss";
 @import "blocks/catalog-page/catalog.scss";
 @import "blocks/catalog-page/additional-goods.scss";
+
+.button {
+  display: block;
+  text-align: center;
+  padding: 7px 44px;
+  background-color: #68b738;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  outline: none;
+}

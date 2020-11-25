@@ -1,29 +1,31 @@
-.promo__content {
-  background: url("/img/index-background-desktop2.jpg") no-repeat center;
-  min-height: 302px;
-  color: $white-color;
-  text-align: center;
-}
+.promo {
+  &__content {
+    background: url("/img/index-background-desktop2.jpg") no-repeat center;
+    min-height: 302px;
+    color: $white-color;
+    text-align: center;
+  }
 
-.promo__title {
-  font-size: 36px;
-  line-height: 36px;
-}
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
-.promo__slogan {
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
+  &__slogan {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
 
-.promo__button {
-  display: block;
-  text-align: center;
-  padding: 7px 44px;
-  background-color: $green-color;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $white-color;
+  &__button {
+    display: block;
+    text-align: center;
+    padding: 7px 44px;
+    background-color: $green-color;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $white-color;
+  }
 }
