@@ -1,4 +1,11 @@
 .catalog {
+  &__items {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__item {
     background-color: $basic-grey;
   }

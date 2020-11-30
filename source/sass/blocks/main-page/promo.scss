@@ -1,9 +1,9 @@
 .promo {
+  background: url("/img/index-background-desktop2.jpg") center no-repeat;
+  background-size: cover;
+
   &__content {
-    background: url("/img/index-background-desktop2.jpg") no-repeat center;
-    min-height: 302px;
     color: $white-color;
-    text-align: center;
 
     @media (min-width: $tablet-width) {
       color: $black-color;
@@ -13,9 +13,12 @@
   }
 
   &__title {
+    font-family: $oswald;
     font-size: 36px;
     line-height: 36px;
     min-width: 414px;
+    font-weight: normal;
+    font-style: normal;
   }
 
   &__slogan {
