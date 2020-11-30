@@ -1,4 +1,11 @@
 .example {
+  &__wrapper {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__title {
     font-style: normal;
     font-weight: normal;
@@ -13,6 +20,49 @@
     font-size: 14px;
     line-height: 18px;
     color: $special-dark-grey;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+    }
+  }
+
+  &__stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__food-costs {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      width: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__stats-info {
@@ -31,14 +81,6 @@
     line-height: 12px;
     text-align: center;
     color: $special-dark-grey;
-  }
-
-  &__food-costs {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
   }
 
   &__range {

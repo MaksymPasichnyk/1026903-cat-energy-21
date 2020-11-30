@@ -1,4 +1,7 @@
 .contacts {
+  display: flex;
+  justify-content: space-between;
+
   &__description {
     font-style: normal;
     font-weight: normal;

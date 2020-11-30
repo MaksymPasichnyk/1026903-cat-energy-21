@@ -1,16 +1,7 @@
-@import "blocks/variables.scss";
-@import "default.scss";
-@import "blocks/header/page.scss";
-@import "blocks/header/page-header.scss";
-@import "blocks/main-page/promo.scss";
-@import "blocks/main-page/catalog.scss";
-@import "blocks/main-page/benefits.scss";
-@import "blocks/main-page/example.scss";
-@import "blocks/footer/page-footer.scss";
-@import "blocks/footer/contacts.scss";
-@import "blocks/form-page/program.scss";
-@import "blocks/catalog-page/catalog.scss";
-@import "blocks/catalog-page/additional-goods.scss";
+// Viewports
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
 
 .button {
   display: block;
@@ -26,3 +17,17 @@
   border: none;
   outline: none;
 }
+
+@import "blocks/variables.scss";
+@import "default.scss";
+@import "blocks/header/page.scss";
+@import "blocks/header/page-header.scss";
+@import "blocks/main-page/promo.scss";
+@import "blocks/main-page/catalog.scss";
+@import "blocks/main-page/benefits.scss";
+@import "blocks/main-page/example.scss";
+@import "blocks/footer/page-footer.scss";
+@import "blocks/footer/contacts.scss";
+@import "blocks/form-page/program.scss";
+@import "blocks/catalog-page/catalog.scss";
+@import "blocks/catalog-page/additional-goods.scss";
