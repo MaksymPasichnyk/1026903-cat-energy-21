@@ -5,22 +5,27 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="container">
-      <div class="page-header__logo main-logo">
-        <img src="https://via.placeholder.com/33x37" alt="Кэт Энерджи">
-      </div>
-      <h1 class="page-header__title">cat energy</h1>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
-        <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__top">
+          <div class="page-header__logo main-logo">
+            <img src="https://via.placeholder.com/33x37" alt="Кэт Энерджи">
+          </div>
+          <div class="page-header__title-logo">
+            <img src="https://via.placeholder.com/33x37" alt="Кэт Энерджи">
+          </div>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list list-reset">
             <li class="main-nav__list-item main-nav__list-item--active">
               <a class="main-nav__link">
@@ -38,69 +43,69 @@
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="page-form">
     <section class="program">
       <div class="container">
+        <h2 class="program__main-title">
+          Подбор программы
+        </h2>
+        <p class="program__description">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
         <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="program__personal-setup">
+            <fieldset class="program__info">
+              <ul class="program__info-list list-reset">
+                <li class="program__info-item">
+                  <label class="program__name-option" for="name">
+                    Имя:*
+                  </label>
+                  <input class="program__name-field" type="text" name="name" id="name">
+                </li>
+                <li class="program__info-item">
+                  <label class="program__name-option" for="weight">
+                    Вес (кг):*
+                  </label>
+                  <input class="program__weight-field" type="text" name="name" id="weight">
+                </li>
+                <li class="program__info-item">
+                  <label class="program__name-option" for="age">
+                    Возраст (лет):
+                  </label>
+                  <input class="program__age-field" type="text" name="name" id="age">
+                </li>
+              </ul>
+            </fieldset>
 
-          <h2 class="program__main-title">
-            Подбор программы
-          </h2>
-          <p class="program__description">
-            Заполните анкету, и мы подберем
-            программу питания для вашего кота
-          </p>
-
-          <fieldset class="program__info">
-            <ul class="program__info-list list-reset">
-              <li class="program__info-item">
-                <label class="program__name-option" for="name">
-                  Имя:*
-                </label>
-                <input type="text" name="name" id="name">
-              </li>
-              <li class="program__info-item">
-                <label class="program__name-option" for="weight">
-                  Вес (кг):*
-                </label>
-                <input type="text" name="name" id="weight">
-              </li>
-              <li class="program__info-item">
-                <label class="program__name-option" for="age">
-                  Возраст (лет):
-                </label>
-                <input type="text" name="name" id="age">
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="program__type">
-            <ul class="program__type-list list-reset">
-              <li class="program__type-item">
-                <input type="radio" id="fit" name="type">
-                <label class="program__name-option" for="fit">
-                  похудение
-                </label>
-              </li>
-              <li class="program__type-item">
-                <input type="radio" id="mass" name="type">
-                <label class="program__name-option" for="mass">
-                  набор массы
-                </label>
-              </li>
-              <li class="program__type-item">
-                <input type="radio" id="advice" name="type">
-                <label class="program__name-option" for="advice">
-                  не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="program__type">
+              <ul class="program__type-list list-reset">
+                <li class="program__type-item">
+                  <input type="radio" id="fit" name="type">
+                  <label class="program__name-option" for="fit">
+                    похудение
+                  </label>
+                </li>
+                <li class="program__type-item">
+                  <input type="radio" id="mass" name="type">
+                  <label class="program__name-option" for="mass">
+                    набор массы
+                  </label>
+                </li>
+                <li class="program__type-item">
+                  <input type="radio" id="advice" name="type">
+                  <label class="program__name-option" for="advice">
+                    не знаю (нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="program__personal-data">
             <legend class="program__title">
@@ -112,13 +117,13 @@
                 <label class="program__name-option" for="email">
                   E-mail:*
                 </label>
-                <input type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
+                <input class="program__email-field" type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
               </li>
               <li class="program__personal-data-item">
                 <label class="program__name-option" for="mobile">
                   Телефон:*
                 </label>
-                <input type="text" name="mobile" id="mobile" placeholder="8 (960) 900-60-90">
+                <input class="program__mobile-field" type="text" name="mobile" id="mobile" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
@@ -127,7 +132,7 @@
             <legend class="program__title">
               Комментарий
             </legend>
-            <textarea>
+            <textarea class="program__comment-field" rows="10" cols="37">
               Расскажите обо всех повАдках кота
             </textarea>
           </fieldset>
@@ -163,13 +168,15 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">
-            отправить заявку
-          </button>
-          <div class="program__note">
-            <span>
-              * — Обязательные поля
-            </span>
+          <div class="program__footer">
+            <button class="program__button button" type="submit">
+              отправить заявку
+            </button>
+            <div class="program__note">
+              <span>
+                * — Обязательные поля
+              </span>
+            </div>
           </div>
         </form>
       </div>

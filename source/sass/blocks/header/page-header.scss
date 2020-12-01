@@ -13,23 +13,10 @@
     display: flex;
     justify-content: space-between;
   }
-
-  &__logo {
-    outline: 5px solid rgba(255, 0, 0, 0.8);
-    outline-offset: -5px;
-  }
-
-  &__title-logo {
-    outline: 5px solid rgba(224, 186, 17, 0.8);
-    outline-offset: -5px;
-  }
 }
 
 .main-nav {
   &__toggle {
-    outline: 5px solid rgba(255, 0, 212, 0.8);
-    outline-offset: -5px;
-
     @media (min-width: $mobile-width) {
       display: none;
     }
