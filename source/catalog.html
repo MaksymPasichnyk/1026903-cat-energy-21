@@ -4,23 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="container">
-      <div class="page-header__logo main-logo">
-        <img src="https://via.placeholder.com/33x37" alt="Кэт Энерджи">
-      </div>
-      <h1 class="page-header__title">cat energy</h1>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
-        <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__top">
+          <div class="page-header__logo main-logo">
+            <img src="https://via.placeholder.com/33x37" alt="Кэт Энерджи">
+          </div>
+          <div class="page-header__title-logo">
+            <img src="https://via.placeholder.com/33x37" alt="Кэт Энерджи">
+          </div>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list list-reset">
             <li class="main-nav__list-item main-nav__list-item--active">
               <a class="main-nav__link">
@@ -38,8 +45,8 @@
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -357,88 +364,88 @@
         <h3 class="additional-goods__title">
           Дополнительные товары
         </h3>
-        <ul class="additional-goods__list list-reset">
-          <li class="additional-goods__item">
-            <table class="additional-goods__table">
-              <th>
-                сахарозаменитель
-              </th>
-              <tr>
-                <td>
-                  1 упаковка (100 г)
-                </td>
-                <td>
-                  200 Р.
-                </td>
-              </tr>
-            </table>
-            <a class="button" href="#">
-              заказать
-            </a>
-          </li>
-          <li class="additional-goods__item">
-            <table class="additional-goods__table">
-              <th>
-                питьевая вода
-              </th>
-              <tr>
-                <td>
-                  5 литров
-                </td>
-                <td>
-                  50 Р.
-                </td>
-              </tr>
-            </table>
-            <a class="button" href="#">
-              заказать
-            </a>
-          </li>
-          <li class="additional-goods__item">
-            <table class="additional-goods__table">
-              <th>
-                молоко
-              </th>
-              <tr>
-                <td>
-                  1 литр
-                </td>
-                <td>
-                  100 Р.
-                </td>
-              </tr>
-            </table>
-            <a class="button" href="#">
-              заказать
-            </a>
-          </li>
-          <li class="additional-goods__item">
-            <table class="additional-goods__table">
-              <th>
-                витамины
-              </th>
-              <tr>
-                <td>
-                  1 упаковка (30 г)
-                </td>
-                <td>
-                  300 Р.
-                </td>
-              </tr>
-            </table>
-            <a class="button" href="#">
-              заказать
-            </a>
-          </li>
-        </ul>
-        </div>
-      <div class="additional-goods__gift">
-        <div class="container">
-          <p class="additional-goods__gift-description">
-            Закажите все
-            и получите чехол для
-            кота в подарок!
-          </p>
+        <div class="additional-goods__blocks-wrapper">
+          <ul class="additional-goods__list list-reset">
+            <li class="additional-goods__item">
+              <table class="additional-goods__table">
+                <tr>
+                  <th>
+                    сахарозаменитель
+                  </th>
+                  <td>
+                    1 упаковка (100 г)
+                  </td>
+                  <td>
+                    200 Р.
+                  </td>
+                </tr>
+              </table>
+              <a class="button" href="#">
+                заказать
+              </a>
+            </li>
+            <li class="additional-goods__item">
+              <table class="additional-goods__table">
+                <tr>
+                  <th>
+                    питьевая вода
+                  </th>
+                  <td>
+                    5 литров
+                  </td>
+                  <td>
+                    50 Р.
+                  </td>
+                </tr>
+              </table>
+              <a class="button" href="#">
+                заказать
+              </a>
+            </li>
+            <li class="additional-goods__item">
+              <table class="additional-goods__table">
+                <tr>
+                  <th>
+                    молоко
+                  </th>
+                  <td>
+                    1 литр
+                  </td>
+                  <td>
+                    100 Р.
+                  </td>
+                </tr>
+              </table>
+              <a class="button" href="#">
+                заказать
+              </a>
+            </li>
+            <li class="additional-goods__item">
+              <table class="additional-goods__table">
+                <tr>
+                  <th>
+                    витамины
+                  </th>
+                  <td>
+                    1 упаковка (30 г)
+                  </td>
+                  <td>
+                    300 Р.
+                  </td>
+                </tr>
+              </table>
+              <a class="button" href="#">
+                заказать
+              </a>
+            </li>
+          </ul>
+          <div class="additional-goods__gift">
+              <p class="additional-goods__gift-description">
+                Закажите все
+                и получите чехол для
+                кота в подарок!
+              </p>
+          </div>
         </div>
       </div>
       </section>
@@ -450,21 +457,19 @@
         <h2 class="visually-hidden">
           Контактная информация
         </h2>
-        <div class="container">
-          <p class="contacts__description">
-            приглашаем
-            к сотрудничеству дилеров!
-          </p>
-          <p class="contacts__address">
-            ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
-          </p>
-          <div class="contacts__map">
-            <a class="map" href=""></a>
-          </div>
-        </div>
+        <p class="contacts__description">
+          приглашаем
+          к сотрудничеству дилеров!
+        </p>
+        <p class="contacts__address">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </p>
       </section>
+      <div class="contacts__map">
+        <a class="map" href=""></a>
+      </div>
       <div class="page-footer__logo main-logo">
         <img src="https://via.placeholder.com/128x24" alt="Кэт Энерджи">
       </div>
