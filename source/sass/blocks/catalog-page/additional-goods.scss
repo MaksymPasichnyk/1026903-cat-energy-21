@@ -6,12 +6,39 @@
     line-height: 24px;
   }
 
+  &__list {
+    @media (min-width: $desktop-width) {
+      flex-grow: 1;
+      margin-right: 75px;
+    }
+  }
+
+  &__item {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__blocks-wrapper {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__list-header {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
+  }
+
+  &__table {
+    @media (min-width: $desktop-width) {
+      flex-grow: 1;
+    }
   }
 
   &__list-row {
@@ -30,5 +57,11 @@
     font-size: 16px;
     line-height: 20px;
     color: $white-color;
+  }
+
+  &__gift {
+    width: 245px;
+    height: 289px;
+    background-color: green; // временный цвет
   }
 }

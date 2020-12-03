@@ -6,6 +6,19 @@
     line-height: 36px;
   }
 
+  &__list {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 80px;
+    }
+  }
+
   &__description {
     font-family: $font-secondary;
     font-style: normal;
