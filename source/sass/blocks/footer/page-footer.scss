@@ -1,4 +1,83 @@
 .page-footer {
+  position: relative;
+
+  &__bottom {
+    background-color: $basic-grey;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $special-grey4;
+    border-top: 1px solid $special-grey4;
+    padding: 18px 0;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      padding: 0;
+      margin-left: 37px;
+      margin-top: 10px;
+      width: 130px;
+    }
+
+    .social-list {
+      display: flex;
+      justify-content: space-between;
+      width: 144px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+      }
+
+      @media (min-width: $tablet-width) {
+        &__img {
+          width: 33px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  &__bottom-list {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 139px;
+    }
+  }
+
+  &__logo {
+    padding: 10px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    height: 43px;
+
+    img {
+      width: 129px;
+      height: 49px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      height: none;
+    }
+  }
+
+  &__copyright {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      width: 170px;
+      padding: 0;
+    }
+  }
+
   &__copyright-title {
     font-family: $font-secondary;
     color: $special-dark-grey;
@@ -6,5 +85,9 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  &__copyright-image {
+    margin-top: 5px;
   }
 }
