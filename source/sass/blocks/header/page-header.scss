@@ -19,8 +19,14 @@
   }
 
   &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+
     @media (min-width: $tablet-width) {
       display: flex;
+      height: 90px;
     }
 
     @media (min-width: $desktop-width) {
@@ -44,7 +50,7 @@
   }
 
   &__title-logo {
-    margin: 0 56px;
+    margin-left: -29px;
 
     @media (min-width: $tablet-width) {
       margin-left: 5px;
@@ -54,8 +60,6 @@
 }
 
 .main-nav {
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -69,14 +73,14 @@
 
   &__toggle {
     position: absolute;
-    top: 25px;
-    right: 15px;
+    top: 24px;
+    right: 21px;
     width: 20px;
     height: 16px;
     border: none;
     background-color: $white-color;
 
-    @media (min-width: $mobile-width) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
@@ -112,17 +116,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 40px;
-    }
-
-    &__list-item--active::before {
-      position: relative;
-
-      @media (min-width: $tablet-width) {
-        content: "";
-        border-bottom: 1px solid green;
-        position: absolute;
-      }
+      margin-right: 35px;
     }
   }
 
@@ -135,6 +129,23 @@
   &__link {
     text-decoration: none;
     color: $black-color;
+
+    @media (min-width: $desktop-width) {
+      color: white;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-family: $font-main;
+    }
+  }
+
+  &__link--active {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid white;
+      padding-bottom: 8px;
+    }
   }
 }
 

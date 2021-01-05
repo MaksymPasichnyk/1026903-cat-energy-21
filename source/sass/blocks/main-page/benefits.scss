@@ -11,7 +11,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 45px;
+      padding-bottom: 20px;
     }
 
     &__item--powder::after {
@@ -31,7 +31,7 @@
     &__item--meal::after {
       content: "3";
       position: absolute;
-      bottom: -36px;
+      bottom: -14px;
       right: 15px;
       z-index: -1;
       font-size: 289px;
@@ -51,16 +51,16 @@
 
   @media (min-width: $desktop-width) {
     &__item--substance::after {
-      bottom: -131px;
+      bottom: -104px;
     }
 
     &__item--powder::after {
-      bottom: -131px;
+      bottom: -104px;
     }
 
     &__item--meal::after {
       right: 4px;
-      bottom: -131px;
+      bottom: -104px;
     }
 
     &__item--period::after {
@@ -74,15 +74,16 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 40px;
+    margin-bottom: 39px;
 
     @media (min-width: $tablet-width) {
       font-size: 60px;
       margin-top: 46px;
-      margin-bottom: 82px;
+      margin-bottom: 83px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 63px;
+      margin-top: 55px;
       margin-bottom: 83px;
     }
   }
@@ -120,6 +121,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       width: 260px;
@@ -134,6 +136,10 @@
     }
   }
 
+  &__item--period {
+    margin-bottom: 42px;
+  }
+
   &__description {
     font-family: $font-secondary;
     font-style: normal;
@@ -141,6 +147,7 @@
     font-size: 13px;
     line-height: 18px;
     color: $special-dark-grey;
+    margin: 0;
     margin-left: 20px;
 
     @media (min-width: $tablet-width) {
