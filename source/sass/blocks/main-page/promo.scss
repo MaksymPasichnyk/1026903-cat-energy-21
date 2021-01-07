@@ -25,7 +25,7 @@
     &::after {
       content: "";
       width: 50%;
-      height: 696px;
+      height: 698px;
       position: absolute;
       right: 0;
       top: -129px;
@@ -157,11 +157,12 @@
 
   &__button-block {
     padding-top: 140px;
-    width: 280px;
     margin: auto;
     margin-bottom: 20px;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
+      width: 280px;
       padding: 0;
       margin-top: 53px;
       margin-left: 105px;

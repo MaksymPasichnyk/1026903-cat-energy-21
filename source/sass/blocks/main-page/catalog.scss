@@ -82,13 +82,23 @@
       font-size: 36px;
       line-height: 36px;
       margin-bottom: 25px;
-      margin-top: 61px;
+      margin-top: 67px;
       margin-left: 14px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 36px;
       margin: 0;
+    }
+  }
+
+  &__title--pro {
+    @media (min-width: $tablet-width) {
+      margin-top: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
     }
   }
 
@@ -126,13 +136,17 @@
   }
 
   &__description--pro {
+    margin: 19px 0 40px 2px;
+
     @media (min-width: $tablet-width) {
       width: 344px;
+      margin: 0 0 47px 2px;
     }
 
     @media (min-width: $desktop-width) {
       width: 450px;
       margin-top: 27px;
+      margin-bottom: 28px;
     }
   }
 

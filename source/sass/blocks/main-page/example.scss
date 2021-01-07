@@ -1,6 +1,6 @@
 .example {
   background-color: $special-grey2;
-  padding-top: 27px;
+  padding-top: 8px;
   padding-bottom: 1px;
   position: relative;
 
@@ -57,11 +57,13 @@
     line-height: 40px;
     margin: 0;
     margin-bottom: 29px;
+    padding-top: 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 63px;
       font-size: 60px;
       line-height: 60px;
+      padding-top: 5px;
     }
 
     @media (min-width: $desktop-width) {
@@ -258,7 +260,6 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    padding-left: 10px;
 
     @media (min-width: $tablet-width) {
       justify-content: flex-start;
@@ -421,12 +422,12 @@
       border-radius: 50%;
       background-color: $green-color;
       position: absolute;
-      left: 46%;
+      left: 48%;
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     }
 
     @media (min-width: $desktop-width) {
-      left: 43%;
+      left: 45%;
     }
   }
 }
