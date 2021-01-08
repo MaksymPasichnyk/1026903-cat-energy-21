@@ -1,14 +1,123 @@
 .promo {
-  background: url("/img/index-background-desktop2.jpg") center no-repeat;
-  background-size: cover;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 852px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 649px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/index-background-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 50%;
+      width: 50%;
+      height: 696px;
+      position: absolute;
+      right: 0;
+      top: -127px;
+      z-index: -2;
+    }
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 698px;
+      position: absolute;
+      right: 0;
+      top: -129px;
+      z-index: -1;
+      background-color: transparentize($green-color, 0.2);
+    }
+  }
+
+  &__wrapper {
+    background-image: url("/img/index-background-desktop2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+      background-color: transparentize($green-color, 0.2);
+
+      @media (min-width: $tablet-width) {
+        background-color: $white-color;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-color: transparent;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+    }
+  }
+
 
   &__content {
     color: $white-color;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 163px;
 
     @media (min-width: $tablet-width) {
       color: $black-color;
       background: none;
       text-align: start;
+      padding: 52px 0 0 86px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 1px 0 0 79px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 166px;
+    left: 50%;
+    margin-left: -140px;
+    background: url("../img/index-can-mobile1.png");
+    width: 280px;
+    height: 270px;
+
+    @media (min-width: $tablet-width) {
+      background: url("../img/index-can-tablet1.png");
+      width: 709px;
+      height: 609px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 250px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../img/index-can-desktop.png") no-repeat center;
+      left: 228px;
+      top: -35px;
+      z-index: 0;
+    }
+
+    img {
+      @media (min-width: $tablet-width) {
+        width: 619px;
+        height: 612px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 511px;
+        height: 493px;
+      }
     }
   }
 
@@ -16,31 +125,67 @@
     font-family: $font-main;
     font-size: 36px;
     line-height: 36px;
-    min-width: 414px;
     font-weight: normal;
     font-style: normal;
+    margin: 0;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
   }
 
   &__slogan {
+    font-family: $font-main;
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &__button-block {
+    padding-top: 140px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 280px;
+      padding: 0;
+      margin-top: 53px;
+      margin-left: 105px;
+    }
   }
 
   &__button {
     display: block;
     text-align: center;
-    padding: 7px 44px;
+    padding: 9px 0;
     background-color: $green-color;
     text-decoration: none;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 19px;
     text-transform: uppercase;
     color: $white-color;
 
     @media (min-width: $tablet-width) {
-      padding: 14px 26px;
-      width: 244px;
+      padding: 18px 28px;
+      width: 189px;
+      margin-left: -23px;
+      margin-top: -7px;
+      font-size: 19px;
     }
   }
 }
