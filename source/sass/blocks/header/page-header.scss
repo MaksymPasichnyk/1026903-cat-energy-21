@@ -67,7 +67,7 @@
 
     @media (min-width: $desktop-width) {
       margin: 0;
-      width: 480px;
+      // width: 480px;
     }
   }
 
@@ -131,7 +131,7 @@
     color: $black-color;
 
     @media (min-width: $desktop-width) {
-      color: white;
+      color: $black-color;
       font-style: normal;
       font-weight: normal;
       font-size: 20px;
@@ -149,6 +149,13 @@
 
     @media (min-width: $desktop-width) {
       border-bottom: 2px solid $white-color;
+    }
+  }
+
+  &__link--active-form {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $green-color;
+      padding-bottom: 10px;
     }
   }
 }
