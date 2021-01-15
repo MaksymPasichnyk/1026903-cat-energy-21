@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--form">
     <div class="container">
       <div class="page-header__wrapper">
         <div class="page-header__logo main-logo">
@@ -68,14 +68,17 @@
 
   <main class="page-form">
     <section class="program">
-      <div class="container">
-        <h2 class="program__main-title">
-          Подбор программы
-        </h2>
-        <p class="program__description">
-          Заполните анкету, и мы подберем
-          программу питания для вашего кота
-        </p>
+      <!-- <div class="form-container"> -->
+        <div class="program__head">
+          <div class="container">
+          <h2 class="program__main-title">
+            Подбор программы
+          </h2>
+          <p class="program__description">
+            Заполните анкету, и мы подберем
+            программу питания для вашего кота
+          </p>
+          </div>
         </div>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="program__personal-setup">
@@ -158,7 +161,7 @@
             <legend class="program__title program__title--comment">
               Комментарий
             </legend>
-            <textarea class="program__comment-field" rows="10" cols="37" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="program__comment-field" rows="10" cols="74" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
 
@@ -195,19 +198,20 @@
             </ul>
             </div>
           </fieldset>
-          <div class="container">
           <div class="program__footer">
+            <div class="container">
             <button class="program__button button" type="submit">
               отправить заявку
             </button>
+            </div>
             <div class="program__note">
               <span>
                 * — Обязательные поля
               </span>
             </div>
           </div>
-          </div>
         </form>
+        </div>
     </section>
   </main>
 
@@ -273,7 +277,7 @@
             <div class="page-footer__copyright-image">
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </footer>

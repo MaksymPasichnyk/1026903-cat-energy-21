@@ -153,7 +153,7 @@
   }
 
   &__link--active-form {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       border-bottom: 2px solid $green-color;
       padding-bottom: 10px;
     }
@@ -208,5 +208,13 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+.page-header--form {
+  border-bottom: 2px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
