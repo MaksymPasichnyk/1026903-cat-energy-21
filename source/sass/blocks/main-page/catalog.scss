@@ -136,7 +136,7 @@
   }
 
   &__description--pro {
-    margin: 19px 0 40px 2px;
+    margin: 19px 0 19px 2px;
 
     @media (min-width: $tablet-width) {
       width: 344px;
@@ -174,12 +174,6 @@
     padding-top: 14px;
     align-items: center;
 
-    a {
-      text-decoration: none;
-      color: $black-color;
-      margin-right: 16px;
-    }
-
     @media (min-width: $tablet-width) {
       border: none;
       padding: 0 0 0 35px;
@@ -188,15 +182,42 @@
       font-weight: normal;
       font-size: 20px;
       line-height: 30px;
-
-      a {
-        margin-right: 26px;
-      }
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
       margin-bottom: 17px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $black-color;
+    position: relative;
+    padding-right: 50px;
+
+    &::after {
+      content: "";
+      width: 30px;
+      height: 20px;
+      background: url("../img/icon-arrow.svg") no-repeat center;
+      position: absolute;
+      top: -1px;
+      right: 6px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: 7px;
+        right: 0;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        top: 0;
+        right: -11px;
+      }
     }
   }
 }
