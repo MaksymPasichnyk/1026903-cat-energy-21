@@ -1,26 +1,87 @@
 .additional-goods {
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 3px;
+      background-color: #68b738;
+      position: absolute;
+      width: 100%;
+      top: 21px;
+      right: -2px;
+      z-index: -3;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+
   &__title {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-top: 20px;
+      padding-left: 37px;
+      background-color: white;
+      width: 373px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -39px;
+      padding-left: 38px;
+    }
   }
 
   &__list {
+    margin-bottom: 62px;
+
+    @media (min-width: $tablet-width) {
+      padding: 38px;
+      margin-bottom: 3px;
+    }
+
     @media (min-width: $desktop-width) {
       flex-grow: 1;
-      margin-right: 75px;
+      margin-right: 42px;
+      padding-left: 0;
+      padding-top: 30px;
     }
   }
 
   &__item {
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+    }
+
     @media (min-width: $desktop-width) {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 25px;
+      align-items: baseline;
     }
   }
 
   &__blocks-wrapper {
+    margin-top: 43px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 65px;
+    }
+
     @media (min-width: $desktop-width) {
       display: flex;
       justify-content: space-between;
@@ -35,9 +96,111 @@
     text-transform: uppercase;
   }
 
-  &__table {
+  &__details {
+    width: 100%;
+
     @media (min-width: $desktop-width) {
       flex-grow: 1;
+    }
+  }
+
+  &__details-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+
+  &__details-header {
+    grid-column: 1/3;
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      flex-grow: 1;
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-grow: 0;
+    }
+  }
+
+  &__details--sugar {
+    @media (min-width: $desktop-width) {
+      margin-right: 50px;
+    }
+  }
+
+  &__details--water {
+    @media (min-width: $desktop-width) {
+      margin-right: 5px;
+    }
+  }
+
+  &__details--milk {
+    @media (min-width: $desktop-width) {
+      margin-right: 60px;
+    }
+  }
+
+  &__details--vitamins {
+    @media (min-width: $desktop-width) {
+      margin-right: 115px;
+    }
+  }
+
+  &__details-info {
+    grid-column: 1/2;
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+    color: $special-dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-right: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
+
+  &__details-price {
+    grid-column: 2/3;
+    text-align: end;
+    color: $special-dark-grey;
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 37px;
     }
   }
 
@@ -56,12 +219,77 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
     color: $white-color;
+
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      width: 156px;
+      margin-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      text-align: center;
+    }
   }
 
   &__gift {
-    width: 245px;
+    display: flex;
     height: 289px;
-    background-color: green; // временный цвет
+    background: url("../img/catalog-page-img/gift-photo-mobile-catalog.jpg") no-repeat center;
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      background: url("../img/catalog-page-img/gift-photo-tablet.jpg") no-repeat center;
+      margin-bottom: 76px;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/catalog-page-img/gift-photo-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 289px;
+      width: 245px;
+      margin-bottom: 0;
+      margin-top: 13px;
+    }
+  }
+
+  &__gift-main {
+    margin: 58px auto;
+    width: 180px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      width: 549px;
+      margin: 0;
+      align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: column;
+      width: 212px;
+      justify-content: space-between;
+      height: 190px;
+      margin: auto;
+    }
+  }
+
+  &__button {
+    padding: 11px 44px;
+
+    @media (min-width: $desktop-width) {
+      padding: 11px 95px;
+    }
   }
 }
