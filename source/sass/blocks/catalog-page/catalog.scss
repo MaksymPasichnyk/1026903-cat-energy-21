@@ -7,7 +7,32 @@
   padding-bottom: 8px;
 }
 
+.contacts-wrapper {
+  background-color: $basic-grey;
+}
+
+.page-catalog {
+  &__container {
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+    }
+  }
+}
+
 .catalog {
+  &__main-container {
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      width: 1220px;
+      padding: 0 110px;
+    }
+  }
+
   &__item {
     border-top: 2px solid $basic-grey;
     padding-top: 21px;
@@ -61,6 +86,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 31px;
+    margin-right: 30px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 68px;
@@ -79,8 +106,9 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 245px);
-      padding: 43px 111px;
       grid-gap: 132px 80px;
+      margin-top: 170px;
+      padding: 0;
     }
   }
 
@@ -91,7 +119,7 @@
     font-size: 12px;
     line-height: 16px;
     color: $special-dark-grey;
-    width: 155px;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
       display: flex;
