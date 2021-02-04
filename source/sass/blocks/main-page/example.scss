@@ -310,10 +310,14 @@
   }
 
   &__content-image {
-    background-image: url("../img/before-mobile1.png");
     background-repeat: no-repeat;
     background-position: -20px 39px;
     height: 300px;
+
+    img {
+      width: 290px;
+      margin-top: 25px;
+    }
 
     @media (min-width: $tablet-width) {
       display: none;

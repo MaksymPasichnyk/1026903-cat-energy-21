@@ -1,28 +1,55 @@
 .page-header {
   &__logo {
-    background-image: url("../img/logo-mobile.svg");
     width: 33px;
     height: 37px;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/logo-tablet.svg");
       width: 174px;
       height: 52px;
       margin-right: 94px;
+      margin-top: 20px;
     }
 
     @media (min-width: $desktop-width) {
-      background: url("../img/logo-desktop.svg") center no-repeat;
       width: 202px;
       height: 59px;
     }
+  }
+
+  .container {
+    padding: 12px 20px;
+  }
+
+  &__top-b {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+    }
+  }
+
+  &__burger-button {
+    background-color: $white-color;
+    border: none;
+    padding: 0px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__burger-icon--close {
+    display: none;
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 68px;
+    flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -32,7 +59,6 @@
     @media (min-width: $desktop-width) {
       display: flex;
       justify-content: space-between;
-      padding-top: 38px;
     }
   }
 
@@ -50,8 +76,6 @@
   }
 
   &__title-logo {
-    margin-left: -29px;
-
     @media (min-width: $tablet-width) {
       margin-left: 5px;
       display: none;
@@ -68,20 +92,6 @@
     @media (min-width: $desktop-width) {
       margin: 0;
       // width: 480px;
-    }
-  }
-
-  &__toggle {
-    position: absolute;
-    top: 24px;
-    right: 21px;
-    width: 20px;
-    height: 16px;
-    border: none;
-    background-color: $white-color;
-
-    @media (min-width: $tablet-width) {
-      display: none;
     }
   }
 
@@ -130,6 +140,15 @@
     text-decoration: none;
     color: $black-color;
 
+    &:not(.main-nav__link--active):hover {
+      opacity: 0.6;
+    }
+
+    &:not(.main-nav__link--active):active {
+      opacity: 0.3;
+    }
+
+
     @media (min-width: $desktop-width) {
       color: $black-color;
       font-style: normal;
@@ -149,13 +168,6 @@
 
     @media (min-width: $desktop-width) {
       border-bottom: 2px solid $white-color;
-    }
-  }
-
-  &__link--active-form {
-    @media (min-width: $tablet-width) {
-      border-bottom: 2px solid $green-color;
-      padding-bottom: 10px;
     }
   }
 }
@@ -187,8 +199,8 @@
 
 .main-nav--opened .main-nav__toggle {
   position: absolute;
-  top: 11px;
-  right: 20px;
+  top: 22px;
+  right: 22px;
 
   &::before,
   &::after {
