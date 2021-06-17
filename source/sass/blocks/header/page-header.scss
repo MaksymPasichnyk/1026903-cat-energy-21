@@ -34,7 +34,7 @@
   &__burger-button {
     background-color: $white-color;
     border: none;
-    padding: 0px;
+    padding: 0;
 
     @media (min-width: $tablet-width) {
       display: none;

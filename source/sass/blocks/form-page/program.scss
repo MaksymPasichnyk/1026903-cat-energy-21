@@ -712,23 +712,23 @@
   }
 }
 
-  .main-nav__link.main-nav__link--active-form {
-    &:hover {
-      opacity: 1;
-    }
-
-    @media (min-width: $tablet-width) {
-      border-bottom: 2px solid $green-color;
-      padding-bottom: 10px;
-    }
+.main-nav__link.main-nav__link--active-form {
+  &:hover {
+    opacity: 1;
   }
 
-  .page-header__form-link {
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $green-color;
+    padding-bottom: 10px;
   }
+}
+
+.page-header__form-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
